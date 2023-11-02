@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Game Center</title>
+    <link rel="shortcut icon" type="x-icon" href="images/icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+    <section class="sub-header">
+        <nav style="display: flex;
+        
+        
+         justify-content: center;align-items: center;height: 100px;" >
+
+            <a href="index.html"><img src="images/logo1.png"> </a>
+            <div class="nav-link" id="navlinks">
+              <span class="material-symbols-outlined" onclick="hideMenu()">
+                close
+                </span>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Action Arcade.html">Action Arcade</a></li>
+                <li><a href="Achievement.html">Achievement Avenue</a></li>
+                <li><a href="Gamers-Gateway.html">Gamer's Gateway</a></li>
+                <li><a href="Contact.html">Contact us</a></li>
+              </ul>
+            </div>
+            <span class="material-symbols-outlined" onclick="showmenu()">
+              menu
+              </span>
+        </nav>
+    <h1>Action Arcade</h1>     
+    </section>
+    <!-- Action Arcade content -->
+
+    <section class="Action-arcade">
+
+      <div class="row">
+        <div class="Arcade-col">
+          <h1>"Dive into Action, Ignite Your Arcade Soul! Unleash Thrills at Every Turn in Our Action Arcade Wonderland."</h1>
+          <p>"Welcome to the heart-pounding universe of our Action Arcade! Immerse yourself in electrifying gameplay, where every challenge conquered and
+             every victory celebrated fuels your adrenaline. From pulse-pounding shooters to lightning-fast reflex games, our Action Arcade is a haven for thrill-seekers.
+              Unleash your gaming prowess,
+             challenge your limits, and let the games begin!"</p>
+
+             <a href="" class="hero-btn red-btn">Action Now</a>
+                 </div>
+                 <div class="Arcade-col">
+                  <img src="images/Arcade-Action.jpg">
+                 </div>
+      </div>
+    </section>
+
+
+<!-- FOOTER -->
+<section class="footer">
+
+  <h4>About Us</h4>
+  <p>Our Vision:
+    At Arcade Game center, we envision a world where gaming transcends boundaries, connecting people globally through shared experiences. We strive to provide a platform that not only entertains but also educates, fosters friendships, and inspires creativity. Whether you're a casual player looking for relaxation or a competitive gamer seeking challenges, we have something special for everyone.
+    <br>
+    What Sets Us Apart:
+    
+    Diverse Gaming Library: Explore a vast collection of games spanning genres, from action-packed shooters to mind-bending puzzles, carefully curated to cater to diverse interests.
+    Community-Centric Approach: We believe in the power of community. Engage with fellow gamers, participate in tournaments, and share your gaming journey with like-minded individuals.
+    Exceptional Support: Our dedicated support team is here to assist you every step of the way. Have a question or need assistance? We're just a message away!
+    Innovation and Technology: Stay ahead of the curve with the latest gaming trends, reviews, and technological advancements, ensuring you're always in the loop.</p>
+
+    <div class="icon">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <p>Made with <i class="fas fa-heart"></i>By Rayyan Naveed</p>
+
+
+</section>
+    <!-- <----JavaScript for Toggle----> 
+    <script>
+      var navlinks = document.getElementById("navlinks");
+      function showmenu(){
+        navlinks.style.right ="0";
+      }
+      function hideMenu(){
+        navlinks.style.right ="-200px";
+      }
+      
+    </script>
+</body>
+</html>

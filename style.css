@@ -1,0 +1,528 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.nav{
+    display: flex;
+    /* padding: 2% 4%; */
+    justify-content: space-between;
+    align-items: center;
+}
+.nav img{
+    width: 150px
+   
+
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 6px 18px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 12px;
+}
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #af17dd;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+} 
+.nav-link ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.text-box h1{
+    font-size: 62px;
+}
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fcfcfc;
+
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    
+    color:#eee;
+    border: 1px solid #fff ;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #af17dd;
+    transition: 1s;
+}
+span.material-symbols-outlined{
+    display: none;
+}
+
+.material-symbols-outlined{
+    color: #fff;
+    display: none;
+}
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-link{
+        position: fixed;
+        background: #af17dd;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+
+
+    }
+    span.material-symbols-outlined{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        margin-left: 20px;
+        font-size: 50px;
+        cursor: pointer;
+    }
+    .nav-link ul{
+        padding: 30px;
+        font-size: 14px;
+    }
+}
+
+/* <!-- Action Arcade --> */
+
+.Arcade{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.p{
+    color: #080808;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.games-col {
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+
+}
+.games-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/* Achievement Avenue */
+.Achievement{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: x-large;
+}
+.Achievement p
+{
+    font-size: 20px;
+}
+.achievements-row {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.Achievement-col {
+    flex-basis: 30%;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.Achievement-col img {
+    width: 100%;
+    display: block;
+}
+
+.layer {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.Achievement-col:hover .layer {
+    background: rgba(189, 69, 245, 0.7);
+}
+
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0,5s;
+
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+@media(max-width: 700px){
+    .Achievement{
+        flex-direction: column;
+    }}
+
+/* GAMING GATEWAY     */
+
+.GamersGateway{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+.Gamers-col{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+}
+.Gamers-col img{
+    width: 100%;
+    border-radius: 10px;
+}
+.Gamers-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
+    text-align: left;
+
+
+}
+.cu {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/arena.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.cu h1{
+   color: #fff;
+   margin-bottom: 40px;
+   padding: 0; 
+}
+@media(max-width:700px){
+    .cu h1{
+        font-size: 24px;
+    }
+}
+/* Footer */
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+     
+}
+.footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.icon .fab{
+    color:#f44336;
+    margin: 0 12px;
+    cursor: pointer;
+    padding: 18px 0;  
+}
+.fas {
+    color: #d42115;
+}
+/* 
+sub-header */
+
+.sub-header{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Action.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+.sub-header h1{
+    margin-top: 100px;
+}
+.Action-arcade{
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+
+}
+.Arcade-col{
+    flex-basis: 48%;
+    padding: 30px 2px;
+}
+.Arcade-col img{
+    width: 100%;
+}
+.Arcade-col h1{
+    padding-top: 0;
+}
+.Arcade-col p{
+    padding: 15px 0 25px;
+}
+.hero-btn{
+    border: 1px solid #af17dd;
+    background: transparent;
+    color: #af17dd;
+}
+.hero-btn:hover{
+    border: 1px solid #af17dd;
+    transition: 1s;}
+
+.Gateway-content{
+    width: 80%;
+    margin: auto;
+    padding: 60px o;
+}    
+.gate-left{
+    flex-basis: 65%;
+}
+.gate-right{
+    width: 100%;
+}
+.gate-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.gate-left p{
+  color: #4b3e3e;
+  padding: 0;  
+} 
+.gate-right {
+    flex-basis: 32%;
+    background: #a642ca;
+    color: #000000;
+    padding: 20px 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.gate-right div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    color: #0f0f0f;
+    box-sizing: border-box;
+}
+
+.gate-right h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.gate-right p {
+    margin: 0;
+    padding: 0;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.gate-right .button-container {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #bd1616;
+    color: #fff; /* Set text color to white or any color that provides good contrast */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #eee; /* Light gray background on hover */
+}
+
+
+.comment-box {
+    border: 1px solid #ccc;
+    margin: 50px 0;
+    padding: 10px 20px;
+}
+
+.comment-box h3 {
+    text-align: left;
+}
+
+.comment-form input,
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.comment-form button {
+    margin: 10px 0;
+}
+.hero-btn {
+    color: #af17dd;
+    background-color: transparent; /* Set the initial background color as transparent */
+    transition: color 0.3s ease, background-color 0.3s ease; /* Adding transitions for both color and background-color */
+}
+
+.hero-btn:hover {
+    color: #fff; /* Changing text color to white on hover */
+    background-color: #8a2be2; /* Adding a purple background color on hover */
+}
+/* Contact us */
+
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+
+}
+.location iframe{
+    width: 100%;
+}
+.contact-us {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap; 
+}
+
+.contact-col {
+    flex-basis: 33%; /* Set to 33% to fit all three columns in one row */
+    margin-right: 10px; 
+    box-sizing: border-box;
+}
+
+
+.contact-col div {
+    display: flex;
+    align-items: left;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: #af17dd;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+    margin: 0;
+    font-size: 20;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+.contact-col input, .contact-col textarea{
+    width: 80%;
+    padding: 15px;
+    margin-bottom: 16px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+
+}
